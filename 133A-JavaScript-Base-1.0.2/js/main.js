@@ -7,10 +7,13 @@
 
 (function main() {
   'use strict'; // Demande une interprétation stricte du code
+    const a = Number(prompt('Entrez un nombre : '));
+    const b = Number(prompt('Entrez un deuxieme nombre : '));
 
-    let a = 'Bonjour';
-    let b = 'toto';
+    if (isNaN(a) || isNaN(b)) {
+      alert('Entrez un nombre !');
+      return;
+    }
+  alert(`Résultat ${a + b} !`);
 
-    console.log(a, b);
 }()); // Main IIFE
-
